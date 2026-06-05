@@ -1,0 +1,8 @@
+torch==2.7.1
+numpy>=2.0.2,<3
+pandas>=2.2.3
+scikit-learn==1.2.2
+py-tgb>=2.2.0
+wandb>=0.16.3
+tqdm
+tabulate
