@@ -1,9 +1,14 @@
+# Verified working on Python 3.11 (GPU run on tgbl-wiki).
+# numpy must stay <2 (torch 2.0.1 is built against numpy 1.x), and
+# py-tgb==2.0.0 + pandas==1.5.3 are required together: py-tgb>=2.2 pulls
+# numpy>=2/pandas>=2.2 (breaks torch), and pandas>=2 returns read-only
+# arrays that crash tgb's dataset pre-processing.
 torch==2.0.1
-numpy
-pandas
-scikit-learn
-py-tgb
-wandb
-numba
-tqdm
-tabulate
+numpy==1.26.4
+pandas==1.5.3
+py-tgb==2.0.0
+scikit-learn==1.9.0
+wandb==0.27.1
+numba==0.65.1
+tqdm==4.68.0
+tabulate==0.10.0
